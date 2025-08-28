@@ -69,6 +69,7 @@ int main(){
     push();
     push();
     push();
+    push();
     pop();
     isempty();
     isfull();
