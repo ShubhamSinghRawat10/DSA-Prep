@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #define QUEUE_MAX 31
-//tough h
+//tough h padhle
 void enqueue(int QUEUE[], int *FRONT, int *REAR);
 void dequeue(int QUEUE[], int *FRONT, int *REAR);
 void peek(int QUEUE[], int FRONT, int REAR);
