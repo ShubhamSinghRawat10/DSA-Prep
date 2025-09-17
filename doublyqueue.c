@@ -1,211 +1,158 @@
-#include "stdio.h"
-#include "stdlib.h"
-#define QUEUE_MAX 10
+#include <stdio.h>
+#include <stdlib.h>
 
-int QUEUE[QUEUE_MAX];
-int FRONT = -1, REAR = -1;
+#define SIZE 10
 
-void enqueuefromRear();
-void dequeuefromRear();
-void dequeuefromFront();
-void peek();
-void isEmpty();
-void isFull();
-void traverse();
-void exitProgram();
+int deque[SIZE];
+int front = -1, rear = -1;
 
-void enqueuefromRear()
-{
-    int enqueueElement;
-    if (REAR == QUEUE_MAX - 1)
-    {
-        printf("Queue Overflow!!\nCannot Enqueue the Elements into the Queue!!");
-    }
-    else if (FRONT == -1 && REAR == -1)
-    {
-        FRONT = REAR = 0;
-        printf("Enter the Element you want to Enqueue in the Queue: ");
-        scanf("%d", &enqueueElement);
-        QUEUE[REAR] = enqueueElement;
-        printf("Element %d is Enqueued Sucessfully!!!\n", enqueueElement);
-    }
-    else
-    {
-        REAR += 1;
-        printf("Enter the Element you want to Enqueue in the Queue: ");
-        scanf("%d", &enqueueElement);
-        QUEUE[REAR] = enqueueElement;
-        printf("Element %d is Enqueued Sucessfully!!!\n", enqueueElement);
-    }
+int isFull() {
+    return ((front == 0 && rear == SIZE - 1) || (front == rear + 1));
 }
 
-void dequeuefromFront()
-{
-    int dequeuedElement;
-    if (FRONT == -1 && REAR == -1)
-    {
-        printf("Queue Underflow!!\nCannot Dequeue the Elements from the Queue!!");
-    }
-    else if (FRONT == REAR)
-    {
-        dequeuedElement = QUEUE[FRONT];
-        FRONT = REAR = -1;
-        printf("Element %d is Dequeued Sucessfully from the Front of the  Queue!!\n", dequeuedElement);
-    }
-    else
-    {
-        dequeuedElement = QUEUE[FRONT];
-        FRONT += 1;
-        printf("Element %d is Dequeued Sucessfully from the Front of the Queue!!\n", dequeuedElement);
-    }
-}
-void dequeuefromRear()
-{
-    int dequeuedElement;
-    if (FRONT == -1 && REAR == -1)
-    {
-        printf("Queue Underflow!!\nCannot Dequeue the Elements from the Queue!!");
-    }
-    else if (FRONT == REAR)
-    {
-        dequeuedElement = QUEUE[FRONT];
-        FRONT = REAR = -1;
-        printf("Element %d is Dequeued Sucessfully from the Rear of the  Queue!!\n", dequeuedElement);
-    }
-    else
-    {
-        dequeuedElement = QUEUE[REAR];
-        REAR -= 1;
-        printf("Element %d is Dequeued Sucessfully from the  Rear of the Queue!!\n", dequeuedElement);
-    }
+int isEmpty() {
+    return (front == -1);
 }
 
-void traverse()
-{
-    if (FRONT == -1 && REAR == -1)
-    {
-        printf("Queue Underflow!!\n Cannot traverse the Elements from the Queue!!");
-    }
-    else
-    {
-
-        printf("Elements in the Queue are: \n");
-        for (int i = FRONT; i <= REAR; i++)
-        {
-            printf("%d  ", QUEUE[i]);
-        }
-    }
-}
-void isEmpty()
-{
-    if (FRONT == -1 && REAR == -1)
-    {
-        printf("Queue is Empty!!\n ");
-    }
-    else
-    {
-        printf("Queue will be Empty after Deqeueing %d Elements !!\n", (REAR + 1) - FRONT);
-    }
-}
-void isFull()
-{
-    if (REAR == QUEUE_MAX - 1)
-    {
-        printf("Queue is FULL!!\n ");
-    }
-    else
-    {
-        printf("Queue will be FULL after Enqueuing %d Elements !!\n", (QUEUE_MAX - 1) - REAR);
-    }
-}
-
-void peek()
-{
-    printf("\n------PEEK Queue------");
-
-    if (FRONT == -1 && REAR == -1)
-    {
-        printf("Queue Underflow!!\n Cannot Peek the Element of  the Queue!!");
-    }
-    else
-    {
-
-        printf("\nToppest value of the QUEUE is :%d", QUEUE[FRONT]);
-    }
-}
-
-void exitProgram()
-{
-    printf("\nDo you really want to Exit program\nPRESS 1 to EXIT and 0 to CONTINUE\n");
-    int ch;
-    scanf("%d", &ch);
-    if (ch == 1)
-    {
-        printf("\nExiting the program........\n");
-        exit(0);
-    }
-    else if (ch == 0)
-    {
-
-        printf("\nContinuing the program........\n");
+void enqueueFront(int x) {
+    if (isFull()) {
+        printf("Deque Overflow!\n");
         return;
     }
-    else
-    {
-        printf("\nInvalid Choice only enter 0 or 1 for exiting process!!\nReturing to Home!!");
+    if (front == -1) {
+        front = rear = 0;
+    } else if (front == 0) {
+        front = SIZE - 1;
+    } else {
+        front = front - 1;
+    }
+    deque[front] = x;
+    printf("Inserted %d at front\n", x);
+}
+
+void enqueueRear(int x) {
+    if (isFull()) {
+        printf("Deque Overflow!\n");
         return;
+    }
+    if (front == -1) { 
+        front = rear = 0;
+    } else if (rear == SIZE - 1) {
+        rear = 0;
+    } else {
+        rear = rear + 1;
+    }
+    deque[rear] = x;
+    printf("Inserted %d at rear\n", x);
+}
+
+void dequeueFront() {
+    if (isEmpty()) {
+        printf("Deque Underflow!\n");
+        return;
+    }
+    printf("Deleted %d from front\n", deque[front]);
+    if (front == rear) { 
+        front = rear = -1;
+    } else if (front == SIZE - 1) {
+        front = 0;
+    } else {
+        front = front + 1;
     }
 }
 
-int main()
-{
-    printf("------QUEUE------\n");
-    int choice;
-    while (1)
-    {
-        printf("\n------MENU---------\n");
-        printf("PRESS 1 ENQUEUE FROM REAR\n");
-        printf("PRESS 2 DEQUEUE FROM FRONT\n");
-        printf("PRESS 3 PEEK\n");
-        printf("PRESS 4 ISEMPTY\n");
-        printf("PRESS 5 ISFULL\n");
-        printf("PRESS 6 TRAVERSE\n");
-        printf("PRESS 7 DEQUEUE FROM REAR\n");
-        printf("PRESS 0 EXIT\n");
-        printf("-----------------------------\n");
-        printf("Enter your choice from the Above MENU  ");
+void dequeueRear() {
+    if (isEmpty()) {
+        printf("Deque Underflow!\n");
+        return;
+    }
+    printf("Deleted %d from rear\n", deque[rear]);
+    if (front == rear) { 
+        front = rear = -1;
+    } else if (rear == 0) {
+        rear = SIZE - 1;
+    } else {
+        rear = rear - 1;
+    }
+}
+
+void peekFront() {
+    if (isEmpty()) {
+        printf("Deque is empty!\n");
+    } else {
+        printf("Front element: %d\n", deque[front]);
+    }
+}
+
+void peekRear() {
+    if (isEmpty()) {
+        printf("Deque is empty!\n");
+    } else {
+        printf("Rear element: %d\n", deque[rear]);
+    }
+}
+
+void traverse() {
+    if (isEmpty()) {
+        printf("Deque is empty!\n");
+        return;
+    }
+    printf("Deque elements: ");
+    int i = front;
+    while (1) {
+        printf("%d ", deque[i]);
+        if (i == rear) break;
+        i = (i + 1) % SIZE;
+    }
+    printf("\n");
+}
+
+int main() {
+    int choice, val;
+    while (1) {
+        printf("\n------ MENU ------\n");
+        printf("1. Enqueue Front\n");
+        printf("2. Enqueue Rear\n");
+        printf("3. Dequeue Front\n");
+        printf("4. Dequeue Rear\n");
+        printf("5. Peek Front\n");
+        printf("6. Peek Rear\n");
+        printf("7. Traverse\n");
+        printf("0. Exit\n");
+        printf("Enter choice: ");
         scanf("%d", &choice);
-        switch (choice)
-        {
-        case 1:
-            enqueuefromRear();
-            break;
-        case 2:
-            dequeuefromFront();
-            break;
-        case 3:
-            peek();
-            break;
-        case 4:
-            isEmpty();
-            break;
 
-        case 5:
-            isFull();
-            break;
-        case 6:
-            traverse();
-            break;
-        case 7:
-            dequeuefromRear();
-            break;
-        case 0:
-            exitProgram();
-            break;
-
-        default:
-            printf("\nInvalid Choice!!\n Kindly enter your choice from the above menu only!!");
-            break;
+        switch (choice) {
+            case 1:
+                printf("Enter value: ");
+                scanf("%d", &val);
+                enqueueFront(val);
+                break;
+            case 2:
+                printf("Enter value: ");
+                scanf("%d", &val);
+                enqueueRear(val);
+                break;
+            case 3:
+                dequeueFront();
+                break;
+            case 4:
+                dequeueRear();
+                break;
+            case 5:
+                peekFront();
+                break;
+            case 6:
+                peekRear();
+                break;
+            case 7:
+                traverse();
+                break;
+            case 0:
+                printf("Exiting...\n");
+                exit(0);
+            default:
+                printf("Invalid choice!\n");
         }
     }
 }
