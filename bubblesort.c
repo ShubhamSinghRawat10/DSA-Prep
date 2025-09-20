@@ -33,7 +33,7 @@ int main()
 
     int arr[n];
 
-    // Taking array elements from user
+    // Taking array element
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
