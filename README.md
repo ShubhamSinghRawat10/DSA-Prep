@@ -1,6 +1,7 @@
 ## DSA Prep 🚀🖥️
 
 A personal workspace for practicing Data Structures and Algorithms in C. This repo contains small, focused programs implementing classic data structures (stack, queue, circular queue, doubly queue) and algorithms (sorting, array utilities, matrix operations), along with a few problem-specific solutions.
+and still continuing to learn at every step...🪄✨
 
 ### Folder contents (examples)
 - `bubblesort.c`, `selectionsort.c`: Sorting algorithms
