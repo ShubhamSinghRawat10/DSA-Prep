@@ -9,7 +9,7 @@ int front = -1, rear = -1;
 int isFull() {
     return ((front == 0 && rear == SIZE - 1) || (front == rear + 1));
 }
-//hi hey
+//hi hey boi
 int isEmpty() {
     return (front == -1);
 }
