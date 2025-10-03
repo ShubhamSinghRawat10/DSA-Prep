@@ -1,13 +1,43 @@
 #include<stdio.h>
 #include<stdlib.h>
+void createlinkedlist();
+void display();
 struct node{
-    int data;
-    struct node *next;
+  int data;
+  struct node*link;
+  
+};
+struct node*head=NULL,*temp=NULL;
+int value;
+void createlinkedlist(){
+
+  struct node* newnode;
+  newnode=(struct node*)malloc(sizeof(struct node)*1);
+  printf("enter value");
+  scanf("%d",&value);
+  newnode->data=value;
+  newnode->link=NULL;
+  if(head==NULL){
+    head=temp=newnode;
+  }
+  else{
+    temp->link=newnode;
+    temp=newnode;
+  }
 }
-*head = NULL;
-struct node *NewNode(int n){
-    struct node*NewNode=(struct node *)malloc(sizeof(struct node));
-    NewNode->data = n;
-    NewNode->next=NULL;
-    return NewNode;
+
+void display(){
+    struct node*t=head;
+    while(t!=NULL){
+    printf("%d->",t->data);
+    t=t->link;
+  }
+}
+
+int main(){
+  createlinkedlist();
+  createlinkedlist();
+  createlinkedlist();
+
+  display();
 }
