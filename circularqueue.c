@@ -12,7 +12,7 @@ void isEmpty();
 void isFull();
 void traverse();
 void exitProgram();
-
+//ji
 void enqueue()
 {
     int enqueueElement;
