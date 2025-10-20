@@ -14,7 +14,7 @@ void createdoublylinkedlist(){
 
   struct node* newnode;
   newnode=(struct node*)malloc(sizeof(struct node)*1);
-  printf("enter value");
+  printf("enter value : ");
   scanf("%d",&value);
   newnode->data=value;
   newnode->prev=NULL;
@@ -54,4 +54,39 @@ void reverselist(){
         temp=temp->prev;
     }
 }
+}
+struct node * createDoublylinkedlist(){
+  struct node * newnode;
+  newnode=(struct node*)malloc(sizeof(struct node));
+  int value;
+  printf("enter values : ");
+  scanf("%d",&value);
+  newnode->data=value;
+  newnode->prev=NULL;
+  newnode->next=NULL;
+  return newnode;
+}
+void insertfront(){
+  struct node*newnode=createDoublylinkedlist();
+  if(head==NULL){   
+    head=temp=newnode;
+  }  else{
+    newnode->next=head;
+    head->prev=newnode;
+    head=newnode;
+  }
+
+}
+int main(){
+  
+        createdoublylinkedlist();
+        createdoublylinkedlist();
+        createdoublylinkedlist();
+        createDoublylinkedlist();
+        traverselist();
+        traverselist();
+        reverselist();
+        insertfront();
+
+  return 0;
 }
