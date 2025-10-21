@@ -84,9 +84,9 @@ int main(){
         createdoublylinkedlist();
         createDoublylinkedlist();
         traverselist();
+        insertfront();
         traverselist();
         reverselist();
-        insertfront();
 
   return 0;
 }
