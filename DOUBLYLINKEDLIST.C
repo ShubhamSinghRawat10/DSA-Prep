@@ -22,6 +22,7 @@ void creationdoublylist()
     newnode->next=NULL;
     if(head==NULL)
     {
+        // hi
         head=temp=newnode;
     }
     else
