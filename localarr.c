@@ -22,6 +22,7 @@ void printarr(int rows,int column,int arr[100][100])
         printf("\n");
     }
 }
+//main function
 int main ()
 {
     
