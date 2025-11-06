@@ -10,6 +10,7 @@ void createarr(int rows, int column,int arr[100][100]){
         }
     }
 }
+// for printing array
 void printarr(int rows,int column,int arr[100][100])
 {
 
