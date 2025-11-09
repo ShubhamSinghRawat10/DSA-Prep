@@ -4,7 +4,7 @@
 
 int QUEUE[QUEUE_MAX];
 int FRONT = -1, REAR = -1;
-
+//functions prototypes
 void enqueue();
 void dequeue();
 void peek();
