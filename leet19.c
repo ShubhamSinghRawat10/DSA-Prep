@@ -19,6 +19,7 @@ void insertelement()
     arr[row-1][col-1]=value;
     col++;
 }
+// creation of 2d array
 void createArr(){
     printf("enter size of row:");
     scanf("%d",&row);
