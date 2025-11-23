@@ -12,7 +12,7 @@ void isEmpty();
 void isFull();
 void traverse();
 void exitProgram();
-
+// function calling starts from here
 void enqueue()
 {
     int enqueueElement;
