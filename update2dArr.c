@@ -16,6 +16,7 @@ void createArr(){
             }
         }
     }
+    //update function
 void updateArr()
 {
     int rowpos;
