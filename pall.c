@@ -27,7 +27,7 @@ int countPalindrome(int arr[],int n){
         }
     }
 }
-// function call ke liye 
+// function call ke liye hai
 int main()
 {
     int n;
