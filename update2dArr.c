@@ -43,6 +43,7 @@ void updateArr()
     }
 }
 }    
+//print function
 void printArr()
     {
         printf("Array elements are:\n");
