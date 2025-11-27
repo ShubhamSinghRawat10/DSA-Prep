@@ -2,6 +2,7 @@
 int row;
 int collumn;
 int arr[100][100];
+//function to create array
 void createArr(){
     printf("enter size of row:");
     scanf("%d",&row);
