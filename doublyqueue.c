@@ -13,7 +13,7 @@ int isFull() {
 int isEmpty() {
     return (front == -1);
 }
-
+//enqueue at front
 void enqueueFront(int x) {
     if (isFull()) {
         printf("Deque Overflow!\n");
