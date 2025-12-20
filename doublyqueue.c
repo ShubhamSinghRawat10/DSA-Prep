@@ -29,7 +29,7 @@ void enqueueFront(int x) {
     deque[front] = x;
     printf("Inserted %d at front\n", x);
 }
-//hi
+//enqueue at rear
 
 void enqueueRear(int x) {
     if (isFull()) {
