@@ -25,7 +25,7 @@ void createlinkedlist(){
     temp->link=newnode;
     temp=newnode;
   }
-  //hu
+  //display();
 }
 
 void display(){
