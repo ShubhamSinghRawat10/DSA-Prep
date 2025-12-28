@@ -35,7 +35,7 @@ void display(){
     t=t->link;
   }
 }
-
+//main function
 int main(){
   createlinkedlist();
   createlinkedlist();
