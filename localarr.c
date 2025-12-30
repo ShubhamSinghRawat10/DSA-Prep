@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+// function to create array
 void createarr(int rows, int column,int arr[100][100]){
     printf("Enter elements of rows and column %d %d\n",rows, column);
     for(int i=0;i<rows;i++)
