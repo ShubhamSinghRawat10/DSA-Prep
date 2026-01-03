@@ -50,6 +50,7 @@ void isempty(){
         printf("Enter the element if stack is not empty: %d\n",CAPACITY-top++);
     }
 }
+//pop functn
 void pop(){
     if(top==-1){
         printf("stack underflow");
