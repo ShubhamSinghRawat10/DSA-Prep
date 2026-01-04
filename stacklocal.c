@@ -7,7 +7,7 @@ void isfull(int top);
 void isempty(int top);
 void Display(int stack[],int top);
 void peek(int stack[],int top);
-
+//push function
 void push(int stack[],int *top){
     if (*top==CAPACITY-1){
         printf("stack overflow");
