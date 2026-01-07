@@ -10,6 +10,7 @@ void Display();
 void peek();
 //stack
 
+//push function
 void push(){
     if (top==CAPACITY-1){
         printf("stack overflow");
