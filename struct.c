@@ -34,3 +34,4 @@ int main()
     printf("Marks: %.f\n", s2.marks);
     return 0;
 }
+//END OF CODE
