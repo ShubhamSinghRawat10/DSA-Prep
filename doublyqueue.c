@@ -46,6 +46,7 @@ void enqueueRear(int x) {
     deque[rear] = x;
     printf("Inserted %d at rear\n", x);
 }
+//dequeue from front
 
 void dequeueFront() {
     if (isEmpty()) {
