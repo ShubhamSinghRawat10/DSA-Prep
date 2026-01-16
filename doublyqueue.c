@@ -62,7 +62,7 @@ void dequeueFront() {
         front = front + 1;
     }
 }
-
+//dequeue from rear
 void dequeueRear() {
     if (isEmpty()) {
         printf("Deque Underflow!\n");
