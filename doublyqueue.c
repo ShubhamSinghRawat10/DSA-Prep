@@ -77,7 +77,7 @@ void dequeueRear() {
         rear = rear - 1;
     }
 }
-
+//peek front
 void peekFront() {
     if (isEmpty()) {
         printf("Deque is empty!\n");
