@@ -35,7 +35,7 @@ void enqueue(int QUEUE[], int *FRONT, int *REAR)
         printf("Element %d is Enqueued Successfully!!!\n", enqueueElement);
     }
 }
-
+//dequeue function
 void dequeue(int QUEUE[], int *FRONT, int *REAR)
 {
     int dequeuedElement;
