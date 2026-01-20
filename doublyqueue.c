@@ -85,7 +85,7 @@ void peekFront() {
         printf("Front element: %d\n", deque[front]);
     }
 }
-
+//peek rear
 void peekRear() {
     if (isEmpty()) {
         printf("Deque is empty!\n");
