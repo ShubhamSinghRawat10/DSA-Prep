@@ -93,7 +93,7 @@ void peekRear() {
         printf("Rear element: %d\n", deque[rear]);
     }
 }
-
+//traverse deque
 void traverse() {
     if (isEmpty()) {
         printf("Deque is empty!\n");
