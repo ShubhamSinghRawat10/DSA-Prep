@@ -108,7 +108,7 @@ void traverse() {
     }
     printf("\n");
 }
-
+// main function with menu
 int main() {
     int choice, val;
     while (1) {
