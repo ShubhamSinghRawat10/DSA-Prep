@@ -43,3 +43,4 @@ int main(){
 
   display();
 }
+//dequeue from rear
