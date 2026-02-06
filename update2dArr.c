@@ -44,6 +44,7 @@ void updateArr()
     }
 }
 }    
+//easy code to update value in 2d array
 //print function
 void printArr()
     {
