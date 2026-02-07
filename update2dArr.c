@@ -21,6 +21,7 @@ void createArr(){
 void updateArr()
 {
     int rowpos;
+    //taking input for row position
     int colpos;
     printf("Enter the row pos:");
     scanf("%d",&rowpos);
