@@ -56,6 +56,7 @@ void dequeue(int QUEUE[], int *FRONT, int *REAR)
         printf("Element %d is Dequeued Successfully from the Queue!!\n", dequeuedElement);
     }
 }
+//traverse function
 void traverse(int QUEUE[], int FRONT, int REAR)
 {
     if (FRONT == -1 && REAR == -1)
