@@ -86,6 +86,7 @@ void isEmpty(int FRONT, int REAR)
         printf("Queue will be Empty after Dequeuing %d Elements !!\n", (REAR + 1) - FRONT);
     }
 }
+//isFull function
 void isFull(int REAR)
 {
     if (REAR == QUEUE_MAX - 1)
