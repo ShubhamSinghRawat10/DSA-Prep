@@ -98,6 +98,7 @@ void isFull(int REAR)
         printf("Queue will be FULL after Enqueuing %d Elements !!\n", (QUEUE_MAX - 1) - REAR);
     }
 }
+//peek function
 void peek(int QUEUE[], int FRONT, int REAR)
 {
     printf("\n------PEEK Queue------\n");
