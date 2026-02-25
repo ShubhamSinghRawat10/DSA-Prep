@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #define QUEUE_MAX 31
-
+//queue
 int QUEUE[QUEUE_MAX];
 int FRONT = -1, REAR = -1;
 //function calling starts from here
