@@ -36,7 +36,6 @@ void enqueue()
         printf("Element %d is Enqueued Sucessfully!!!\n", enqueueElement);
     }
 }
-//dequeue function
 void dequeue()
 {
     int dequeuedElement;
