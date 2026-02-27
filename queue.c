@@ -4,7 +4,7 @@
 //queue
 int QUEUE[QUEUE_MAX];
 int FRONT = -1, REAR = -1;
-//function calling starts from here
+
 void enqueue();
 void dequeue();
 void peek();
