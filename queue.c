@@ -56,7 +56,7 @@ void dequeue()
         printf("Element %d is Dequeued Sucessfully from the Queue!!\n", dequeuedElement);
     }
 }
-//traverse function
+
 
 void traverse()
 {
