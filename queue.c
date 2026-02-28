@@ -74,7 +74,7 @@ void traverse()
         }
     }
 }
-//isEmpty function
+
 void isEmpty()
 {
     if (FRONT == -1 && REAR == -1)
