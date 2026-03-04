@@ -113,7 +113,7 @@ void peek()
         printf("\nToppest value of the QUEUE is :%d", QUEUE[FRONT]);
     }
 }
-// exit function
+
 void exitProgram()
 {
     printf("\nDo you really want to Exit program\nPRESS 1 to EXIT and 0 to CONTINUE\n");
