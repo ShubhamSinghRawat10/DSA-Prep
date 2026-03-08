@@ -8,7 +8,6 @@ void isEmpty(int FRONT, int REAR);
 void isFull(int REAR);
 void traverse(int QUEUE[], int FRONT, int REAR);
 void exitProgram();
-//enqueue function
 
 void enqueue(int QUEUE[], int *FRONT, int *REAR)
 {

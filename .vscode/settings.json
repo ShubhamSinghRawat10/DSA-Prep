@@ -1,5 +1,7 @@
 {
     "files.associations": {
         "DOUBLYLINKEDLIST.C": "cpp"
-    }
+    },
+    "vscode-pets.theme": "winter",
+    "vscode-pets.petSize": "small"
 }
