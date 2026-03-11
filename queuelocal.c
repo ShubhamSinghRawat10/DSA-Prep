@@ -70,7 +70,6 @@ void traverse(int QUEUE[], int FRONT, int REAR)
         printf("\n");
     }
 }
-//isEmpty function and isFull function
 void isEmpty(int FRONT, int REAR)
 {
     if (FRONT == -1 && REAR == -1)
