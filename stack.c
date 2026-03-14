@@ -71,7 +71,7 @@ void Display(){
         printf("%d\n",stack[i]);
     }
 }
-//main function
+
 int main(){
     push();
     push();
