@@ -63,7 +63,7 @@ void pop(){
         top--;
     }
 }
-//display 
+//displ
 void Display(){
     printf("......Displaying stack..... ");
     printf("Enter elements in stack area \n");
