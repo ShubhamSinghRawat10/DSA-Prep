@@ -18,7 +18,7 @@ void push(){
     else{
         // int value;
         printf("Enter the value you want to enter: ");
-        // scanf
+        
     scanf("%d",&stack[++top]);
     }
 }
