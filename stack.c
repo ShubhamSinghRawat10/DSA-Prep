@@ -8,7 +8,6 @@ void Pop();
 void isfull();
 void Display();
 void peek();
-//stack
 
 void push(){
     if (top==CAPACITY-1){
