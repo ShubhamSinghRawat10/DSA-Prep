@@ -19,7 +19,7 @@ void push(){
         // int value;
         printf("Enter the value you want to enter: ");
         // scanf("%d",&value);
-    // stack[++top]=value;
+    // stack[++t
     scanf("%d",&stack[++top]);
     }
 }
