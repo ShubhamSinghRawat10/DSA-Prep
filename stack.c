@@ -23,7 +23,6 @@ void push(){
     scanf("%d",&stack[++top]);
     }
 }
-//peek
 void peek(){
     if(top==-1){
         printf("stack underflow");
