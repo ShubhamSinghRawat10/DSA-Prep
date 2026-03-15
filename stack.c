@@ -42,7 +42,7 @@ void isfull(){
     }
 
 }
-// Is empty
+// Is e
 void isempty(){
     if(top==-1){
         printf("Stack is empty");
