@@ -16,7 +16,7 @@ void push(){
         printf("stack overflow");
     }
     else{
-        // int value;
+        
         printf("Enter the value you want to enter: ");
         
     scanf("%d",&stack[++top]);
