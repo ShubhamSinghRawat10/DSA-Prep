@@ -60,7 +60,7 @@ void pop(int stack[],int *top){
         top--;
     }
 }
-//display 
+//displ
 void Display(int stack[], int top){
     printf("......Displaying stack..... ");
     printf("Enter elements in stack area \n");
