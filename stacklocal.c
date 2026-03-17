@@ -29,7 +29,7 @@ void peek(int stack[],int top){
         printf("Toppest element of stack is %d\n",stack[top]);
     }
 }
-//full fu
+//full
 void isfull(int top){
     if(top==CAPACITY-1){
         printf("Stack overflow");
