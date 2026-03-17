@@ -5,7 +5,7 @@ struct student{
     char name[50];
     float marks;
 };
-//MAIN FUNCTION
+//MAIN FUNCT
 int main()
 {
     struct student s1;
