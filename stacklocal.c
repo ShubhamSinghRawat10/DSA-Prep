@@ -20,7 +20,7 @@ void push(int stack[],int *top){
         printf("%d pushed to stack",value);
     }
 }
-//peek fu
+//peek 
 void peek(int stack[],int top){
     if(top==-1){
         printf("stack underflow");
