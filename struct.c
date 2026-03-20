@@ -22,7 +22,7 @@ int main()
     printf("Enter marks: ");
     scanf("%f", &s2.marks);
 
-    //display ke liye h yeh code okk
+    //display ke liye h yeh code
     printf("\nStudent Details:\n");
     printf("Roll Number: %d\n", s1.rollno);
     printf("Name: %s\n", s1.name);
