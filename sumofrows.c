@@ -35,7 +35,7 @@ void transpose1(int arr[MAX][MAX],int transpose[MAX][MAX],int row,int col)
         }
     }
 }
-//main function
+//main funct
 int main() {
     int arr[MAX][MAX];   
     int transpose[MAX][MAX];
