@@ -24,7 +24,7 @@ void printArr(int arr[MAX][MAX], int row, int col) {
         printf("\n");
     }
 }
-//transpose function
+//transpose 
 void transpose1(int arr[MAX][MAX],int transpose[MAX][MAX],int row,int col)
 {
     for(int i=0;i<row;i++)
