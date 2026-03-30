@@ -14,7 +14,7 @@ void createArr(int arr[MAX][MAX], int *row, int *col) {
         }
     }
 }
-//print function in 
+//print function
 void printArr(int arr[MAX][MAX], int row, int col) {
     printf("\nElements of matrix:\n");
     for (int i = 0; i < row; i++) {
