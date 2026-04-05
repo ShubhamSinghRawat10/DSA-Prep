@@ -21,7 +21,7 @@ int main()
     printf("Enter marks: ");
     scanf("%f", &s2.marks);
 
-    //display ke liye
+    //display ke li
     printf("\nStudent Details:\n");
     printf("Roll Number: %d\n", s1.rollno);
     printf("Name: %s\n", s1.name);
