@@ -65,6 +65,7 @@ void Display(int stack[], int top){
         printf("%d\n",stack[i]);
     }
 }
+//fsefsfe
 int main(){
     int stack[CAPACITY];
     int top=-1;
