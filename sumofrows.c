@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAX 100  
-//create fu
+//create f
 void createArr(int arr[MAX][MAX], int *row, int *col) {
     printf("Enter row size: ");
     scanf("%d", row);
