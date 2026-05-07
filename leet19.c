@@ -47,7 +47,6 @@ void printArr()
             printf("\n");
         }
     }
-    // main function
 int main(){
     createArr();
     printArr();
