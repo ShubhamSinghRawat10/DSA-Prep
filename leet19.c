@@ -34,7 +34,7 @@ void createArr(){
             }
         }
     }
-// print 2d array
+// print 2d arr
 void printArr()
     {
         printf("Array elements are:\n");
