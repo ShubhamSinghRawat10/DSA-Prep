@@ -19,7 +19,7 @@ void insertelement()
     arr[row-1][col-1]=value;
     col++;
 }
-// creation 
+// creatio
 void createArr(){
     printf("enter size of row:");
     scanf("%d",&row);
