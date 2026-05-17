@@ -9,7 +9,7 @@ void insertelement()
     scanf("%d",&row);
     printf("Enter col pos: ");
     scanf("%d",&col);
-    /iefsih
+    /iefs
     printf("Enter value pos: ");
     scanf("%d",&value);
     for(int j=col-1 ; j>col-1; j--)
