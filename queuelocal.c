@@ -144,7 +144,7 @@ int main()
         printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-/scascajncla        switch (choice)
+/scascajncl        switch (choice)
         {
         case 1:
             enqueue(QUEUE, &FRONT, &REAR);
