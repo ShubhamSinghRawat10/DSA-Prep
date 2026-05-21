@@ -144,7 +144,7 @@ int main()
         printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-/scascajnclanclkasncl
+/scascajnclanclkasn
         switch (choice)
         {
         case 1:
