@@ -146,7 +146,7 @@ int main()
         scanf("%d", &choice);
         switch (choice)
         {
-            /fsdrbgsgssvsaeeav
+            /fsdrbgsgssvsaeea
         case 1:
             enqueue(QUEUE, &FRONT, &REAR);
             break;
