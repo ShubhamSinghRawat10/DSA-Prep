@@ -146,7 +146,7 @@ int main()
         scanf("%d", &choice);
         switch (choice)
         {
-                 /;esf  case 1:
+                 /;es  case 1:
             enqueue(QUEUE, &FRONT, &REAR);
             break;
         case 2:
