@@ -7,7 +7,7 @@ struct node{
   struct node*link;
   
 };
-//node
+//nod
 struct node*head=NULL,*temp=NULL;
 int value;
 void createlinkedlist(){
