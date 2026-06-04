@@ -138,7 +138,7 @@ void exitProgram()
         return;
     }
 }
-// ma
+// m
 int main()
 {
     printf("------QUEUE------\n");
