@@ -138,7 +138,7 @@ void exitProgram()
         return;
     }
 }
-// main func
+// main fun
 int main()
 {
     printf("------QUEUE------\n");
