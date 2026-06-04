@@ -138,8 +138,7 @@ void exitProgram()
         return;
     }
 }
-// mai
-
+// ma
 int main()
 {
     printf("------QUEUE------\n");
