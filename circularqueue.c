@@ -100,7 +100,7 @@ void isFull()
         printf("Queue will be FULL after Enqueuing %d Elements !!\n", (QUEUE_MAX - 1) - REAR);
     }
 }
-// peek fun
+// peek f
 void peek()
 {
     printf("\n------PEEK Queue------");
