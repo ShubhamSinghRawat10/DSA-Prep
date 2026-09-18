@@ -10,7 +10,7 @@ struct node* list_create();
 struct node*temp,*head;
 void creationdoublylist()
 {
-    //struct node*ne
+    //struct node*n
     struct node*newnode;
     newnode=(struct node*)malloc(1*sizeof(struct node));
     int value;
