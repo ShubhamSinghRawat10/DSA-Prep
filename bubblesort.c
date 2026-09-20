@@ -14,7 +14,7 @@ void bubblesort(int arr[],int n){
         }
     }
 }
-//pr
+
 void printarr(int arr[],int n){
     for(int i =0;i<n;i++){
         
