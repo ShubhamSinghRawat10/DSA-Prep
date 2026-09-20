@@ -28,7 +28,7 @@ int main()
 {
      int n;
 
-    // Taking array size from user in 
+    // Taking array size from user 
     printf("Enter the number of elements: ");
     scanf("%d", &n);
 
